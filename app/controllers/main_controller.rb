@@ -74,9 +74,9 @@ end
 def finder
   require 'email_check.rb'
   require 'uri'
-  fname = params[:fname]
-  lname = params[:lname]
-  url = params[:url]
+  fname = (params[:fname]).downcase
+  lname = (params[:lname]).downcase
+  url = (params[:url]).downcase
 
   @emails = permutate(fname, lname, url)
 

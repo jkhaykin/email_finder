@@ -1,6 +1,6 @@
 <%= form_tag({controller: "main", action: "finder"}, method: "post") do %>
-  <input name="fname">
-  <input name="lname">
-  <input name="url">
+  <input name="fname" placeholder="first name">
+  <input name="lname" placeholder="last name">
+  <input name="url" placeholder="url (ex: wepay.com)">
   <%= submit_tag %>
 <% end %>
