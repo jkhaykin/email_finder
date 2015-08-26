@@ -1,28 +1,14 @@
-== README
+== Email Finder
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<b>This little tool helps you find someones email address with their name and URL.</b>
 
-Things you may want to cover:
+The way it works is it runs many different permuatations using the provided name and URL and pings the mail server with each permutation. Before it's able to actually send an email, it cuts the connection and returns whether it received a valid response back. If it does, you will then see the email address.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+=== How to use:
+  git clone https://github.com/jkhaykin/email_finder.git
+  cd email_finder
+  bundle install
+  rails s
+  
+  
+If you have any ideas on how this could be improved, pull requests are encouraged and accepted.
